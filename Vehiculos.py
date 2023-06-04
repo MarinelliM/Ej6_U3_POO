@@ -49,14 +49,6 @@ class Vehiculo:
         importe = self.importe()
         return f'{importe}'
     
-    # def toJSON(self):
-	# 	return {
-	# 		'marca': self.__marca,
-	# 		'modelo': self.__modelo,
-	# 		'color': self.__color,
-	# 		'pais': self.__pais,
-	# 		'precio': self.__precio
-	# 	}
     def toJson(self):
         return 
 
