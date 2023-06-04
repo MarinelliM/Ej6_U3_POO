@@ -1,4 +1,3 @@
-from Vehiculos import Vehiculo
 from Lista import Lista
 from Lista import CInterface
 from ObjectEncoder import ObjectEncoder
@@ -7,6 +6,7 @@ from VUsados import Usado
 if __name__ == '__main__':
         lista = Lista()
         interfaz = CInterface(lista)
+        
         vehiculo1 = Usado('Usado','Ford','F100',2,'blanco', 10000000,'ABC-490',1990,1000000)
         vehiculo2 = Nuevo('Nuevo','Volskwagen','Vento',4,'gris', 45000000,'full')
         posicion = int(input('Ingrese la posicion donde quiere almacenar al objeto en la lista:'))
@@ -24,7 +24,6 @@ if __name__ == '__main__':
         posicion = int(input('Ingrese la posicion donde quiere almacenar al objeto en la lista:'))
         interfaz.insertarVehiculo(vehiculo4,posicion)
         lista.mostrar()
-        a = input('valor:')
         interfaz.mostrarVehiculo()
         
         print('Inciso 4:')
@@ -34,23 +33,13 @@ if __name__ == '__main__':
         lista.vehiculomaseco()
 
         a = input('Inciso 7:')
-        # OE = ObjectEncoder()
-        # l = lista.almacenaJson()
-        
-        # OE.guardarJSONArchivo(l, "NuevosVehiculos.json")
-        # a = input('Mostrar archivo json cargado con la lista definida:')
-        # OE.mostrarJson()
-
         # Crear una instancia de ObjectEncoder
         OE = ObjectEncoder()
-
         # Guardar la lista de vehículos en formato JSON
         l = lista.almacenaJson()
         OE.guardarJSONArchivo(l, "NuevosVehiculos.json")
-
         a = input('Mostrar archivo JSON cargado con la lista definida:')
         OE.mostrarJson('NuevosVehiculos.json')
-
 
         print('De aqui en adelante se trabaja con los archivos json')
         print('Si continua se modificara el archivo json')
