@@ -17,6 +17,7 @@ class ObjectEncoder(object):
             json.dump(diccionario, destino, indent=4)
             print("--Archivo guardado correctamente--")
             destino.close()
+    #Otra forma de hacerlo
     #def guardarJSONArchivo(self, diccionario, archivo):
     #    try:
     #        with open(archivo, 'w', encoding='utf-8') as destino:
@@ -52,7 +53,8 @@ class ObjectEncoder(object):
             datos = json.load(archivo)
         # Muestra los datos de manera legible
         print(json.dumps(datos, indent=4))
-
+        
+    #Otra forma de hacerlo
     # def mostrarJson(self):
         # try:
             # # Abre el archivo JSON y carga en datos el contenido
@@ -66,13 +68,6 @@ class ObjectEncoder(object):
         # except json.JSONDecodeError as e:
             # print("Error al decodificar el archivo JSON:", str(e))
 
-    #def agregarJson(self,diccionario):
-    #    with open('vehiculos.json','r') as archivo:
-    #        datos = json.load(archivo)
-    #    datos.update(diccionario)
-    #    # Escribe el contenido actualizado en el archivo JSON
-    #    with open('vehiculos.json', 'w') as archivo:
-    #        json.dump(datos, archivo, indent=4)
     def agregarJson(self,lista):
         try:
             with open('vehiculos.json', 'r') as archivo:
