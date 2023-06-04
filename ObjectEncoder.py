@@ -1,8 +1,6 @@
 from pathlib import Path
 import json
 from Lista import Lista
-from VNuevos import Nuevo
-from VUsados import Usado
 
 class ObjectEncoder(object):
 
