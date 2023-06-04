@@ -90,29 +90,6 @@ class Lista:
             if posicion == self.__tope:
                 self.__actual = nodo        
             self.__tope+=1
-    # def insertarElemento(self,pos,objeto):
-    #     cont = 1
-    #     cabeza = self.__comienzo
-    #     if self.__comienzo is None:
-    #         nodo = Nodo(objeto)
-    #         nodo.setSiguiente(self.__comienzo)
-    #         self.__comienzo = nodo
-    #         self.__actual = nodo
-    #         self.__tope += 1
-    #     else:
-    #         while cont < pos - 1  and cabeza is not None:
-    #             cont += 1
-    #             cabeza = cabeza.getSiguiente()
-    #         if pos == 1:
-    #             nuevoNodo = Nodo(objeto)
-    #             nuevoNodo.setSiguiente(cabeza)
-    #             self.__comienzo = nuevoNodo
-    #             self.__actual = nuevoNodo
-    #         else:
-    #             nuevoNodo = Nodo(objeto)
-    #             nuevoNodo.setSiguiente(cabeza.getSiguiente())
-    #             cabeza.setSiguiente(nuevoNodo)
-    #         self.__tope+=1
 
     def mostrar(self):
         aux = self.__comienzo
@@ -157,19 +134,6 @@ class Lista:
             else: 
                 aux = aux.getSiguiente()
                 i += 1
-    
-    # def buscarXpatente(self):
-    #     patente = str(input('Ingrese la patente a buscar:'))
-    #     i = 0
-    #     aux = self.__comienzo
-    #     while aux != None:
-    #         if isinstance(aux,Usado) and patente == aux.getpatente():
-    #             precio = int(input('Ingrese el nuevo precio base del vehiculo:'))
-    #             aux.setpreciobase(precio)
-    #             aux.mostrarimporte()
-    #         else: 
-    #             aux = aux.getSiguiente()
-    #             i += 1
 
     def vehiculomaseco(self):
         i = 0
@@ -214,15 +178,3 @@ class Lista:
             aux = aux.getSiguiente()
             print(lista)
         return lista
-            
-            
-            
-            
-            
-        #    dicc = dato.toJson()
-        #    lista.append(dicc)
-        #    aux = aux.getSiguiente()
-        #return lista
-        #OE.guardarJSONArchivo(lista, "NuevosVehiculos.json")
-        #print("--Archivo guardado correctamente--")
-
