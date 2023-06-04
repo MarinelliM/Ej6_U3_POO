@@ -1,0 +1,54 @@
+[
+    {
+        "__class__": "Nuevo",
+        "__atributos__": {
+            "tipo": "nuevo",
+            "marca": "Fiat",
+            "modelo": "Palio",
+            "puertas": 5,
+            "color": "Rojo",
+            "precio_base": 15000,
+            "version": "base"
+        }
+    },
+    {
+        "__class__": "Usado",
+        "__atributos__": {
+            "tipo": "usado",
+            "marca": "Ford",
+            "modelo": "Focus",
+            "puertas": 4,
+            "color": "Negro",
+            "precio_base": 12000,
+            "patente": "ABC123",
+            "anio": 2018,
+            "kilometraje": 50000
+        }
+    },
+    {
+        "__class__": "Nuevo",
+        "__atributos__": {
+            "tipo": "Nuevo",
+            "marca": "Toyota",
+            "modelo": "corolla",
+            "puertas": 4,
+            "color": "blanco",
+            "precio_base": 120000000,
+            "version": "full"
+        }
+    },
+    {
+        "__class__": "Usado",
+        "__atributos__": {
+            "tipo": "Usado",
+            "marca": "Chevrolet",
+            "modelo": "Trucker",
+            "puertas": 4,
+            "color": "gris",
+            "precio_base": 50000000,
+            "patente": "AF-523-BA",
+            "anio": 2020,
+            "kilometraje": 20000
+        }
+    }
+]

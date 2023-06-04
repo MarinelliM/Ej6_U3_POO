@@ -1,0 +1,54 @@
+[
+    {
+        "__class__": "Usado",
+        "__atributos__": {
+            "tipo": "Usado",
+            "marca": "Ford",
+            "modelo": "F150",
+            "puertas": 2,
+            "color": "blanco",
+            "precio_base": 10000,
+            "patente": "AFC-321",
+            "anio": 1990,
+            "kilometraje": 1000
+        }
+    },
+    {
+        "__class__": "Nuevo",
+        "__atributos__": {
+            "tipo": "Nuevo",
+            "marca": "Volskwagen",
+            "modelo": "Amarok",
+            "puertas": 4,
+            "color": "gris",
+            "precio_base": 998238422,
+            "version": "full"
+        }
+    },
+    {
+        "__class__": "Usado",
+        "__atributos__": {
+            "tipo": "Usado",
+            "marca": "Ford",
+            "modelo": "F100",
+            "puertas": 2,
+            "color": "blanco",
+            "precio_base": 10000000,
+            "patente": "ABC-490",
+            "anio": 1990,
+            "kilometraje": 1000000
+        }
+    },
+    {
+        "__class__": "Nuevo",
+        "__atributos__": {
+            "tipo": "Nuevo",
+            "marca": "Volskwagen",
+            "modelo": "Vento",
+            "puertas": 4,
+            "color": "gris",
+            "precio_base": 45000000,
+            "version": "full"
+        }
+    }
+]
