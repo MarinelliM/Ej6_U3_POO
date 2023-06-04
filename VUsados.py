@@ -31,7 +31,6 @@ class Usado(Vehiculo):
         return resta
     
     def toJson(self):
-        dato = super().toJson()
         d = dict(
             __class__=self.__class__.__name__,
             __atributos__=dict(
